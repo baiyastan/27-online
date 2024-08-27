@@ -1,0 +1,22 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    height: 40px;
+    align-items: center;
+}
+.header-ul{
+    display: flex;
+    justify-content: space-between;
+    width: 290px;
+}
+.header-i{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    width: 70px;
+}
+.header-ol{
+    border: 1px solid rgb(121, 119, 119);
+    margin-top: 10px;
+}
