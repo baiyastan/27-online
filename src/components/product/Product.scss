@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.product{
+    margin-top: 80px;
+    .reds{
+        color: rgb(219, 68, 68);
+        width: 100px;
+        height: 120px;
+        display: flex;
+        h6{
+            margin-top: 20px;
+            margin-left: 12px;
+            font-size: 22px;
+        }
+        img{
+            width: 30%;
+            height: 60%;
+        }
+    }
+}
+
+
+
+
+.product-image{
+    padding: 22px;
+    position: relative;
+    background-color: rgb(242, 241, 241);
+    width:20%;
+    .discount{
+      position: absolute;
+      margin-top: -190px;
+      background: red;
+      padding: 2px 5px;
+      color: #fff;
+      font-size: 11px;
+      border-radius: 3px;
+    }
+    .icons{
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        img{
+            width: 34px;
+            height: 34px;
+        }
+    }
+    .product-btn:hover{
+       background: black;
+       color: #fff;
+    }
+    .product-btn{
+        border: none;
+        padding: 5px 8px;
+        width: 100%;
+    }
+  .playstaishon{
+    width: 200px;
+   }
+}
+.flash{
+    display: flex;
+    gap: 100px;
+   
+    p{
+        font-size: 35px;
+        color: black;
+        text-align: center;
+    }
+    .chasy{
+        display: flex;
+        text-align: center;
+        ul{
+            list-style: none;
+            .numders{
+                 font-size: 35px;
+                 color: black;
+                 font-weight: 500;
+            }
+        }
+        .koshChekit{
+            // margin-top: 10px;
+            text-align: center;
+            padding-left: 20px;
+            color: red;
+            font-weight: 500;
+            font-size: 30px;
+        }
+    }
+    .strelki{
+        width: 100px;
+        height: 100px;
+        display: flex;
+        gap: 25px;
+        img{
+            width:35%;
+            height: 35%;
+            margin-top: 30px;
+        }
+    }
+}
+.info{
+    h6{
+        font-size: 14px;
+    }
+    .prices{
+        display: flex;
+        gap: 12px;
+        .p1{
+            color: red;
+        }
+        .p2{
+            text-decoration: line-through;
+        }
+    }
+}
