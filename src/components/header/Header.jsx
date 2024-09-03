@@ -19,12 +19,17 @@ function Header() {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
+          <li>
+            <Link to="/register">Sign Up</Link>
+          </li>
         </ul>
         <div>
           <input type="text" />
         </div>
         <div className="header-i">
-          <i className="bi bi-heart"></i>
+          <Link to="/">
+            <i className="bi bi-heart"></i>
+          </Link>
           <i className="bi bi-archive"></i>
           <i className="bi bi-person"></i>
         </div>

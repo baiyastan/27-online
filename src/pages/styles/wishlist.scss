@@ -1,0 +1,342 @@
+.likeIt {
+    .top-likeIt {
+      .wishList-likIt {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 60px 0px;
+  
+        p {
+          color: rgb(0, 0, 0);
+          font-family: Poppins;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 26px;
+        }
+        .btn-btn {
+          position: relative;
+          button {
+            width: 223px;
+            height: 56px;
+            padding: 16px 48px 16px 48px;
+            color: rgb(0, 0, 0);
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            box-sizing: border-box;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 4px;
+            z-index: 99;
+            &:active {
+              opacity: 0.5;
+            }
+            &:hover {
+              transform: scaleX(1.1);
+              transition: 1s;
+            }
+            &:active::before {
+              width: 100%;
+            }
+            &:focus {
+              transform: scale(1.1);
+              transition: 2.9s;
+            }
+            &:focus::before {
+              width: 100%;
+            }
+          }
+          button::before {
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0px;
+            width: 0;
+            height: 55px;
+            border-radius: 4px;
+            background: linear-gradient(
+              to right,
+              rgb(219, 255, 255),
+              rgb(200, 200, 200)
+            );
+            z-index: -1;
+            transition: 4.5s;
+          }
+        }
+      }
+    }
+    //   TODO:  bottom
+    .bottom-likeIt {
+      .justForYou-likeIt {
+        margin: 60px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .div-all {
+          width: 156px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          .div-red {
+            width: 20px;
+            height: 40px;
+            border-radius: 4px;
+            background: rgb(219, 68, 68);
+          }
+          p {
+            color: rgb(0, 0, 0);
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 26px;
+          }
+        }
+        .btnBtn {
+          position: relative;
+          button {
+            width: 150px;
+            height: 65px;
+            order: 1;
+            box-sizing: border-box;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 4px;
+            color: rgb(0, 0, 0);
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            z-index: 99;
+            &:active {
+              opacity: 0.5;
+            }
+            &:hover {
+              transform: scaleX(1.1);
+              transition: 1s;
+            }
+            &:active::before {
+              width: 100%;
+            }
+            &:focus {
+              transform: scale(1.1);
+              transition: 2.9s;
+            }
+            &:focus::before {
+              width: 100%;
+            }
+          }
+          button::before {
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0px;
+            width: 0;
+            height: 63px;
+            border-radius: 4px;
+            background: linear-gradient(
+              to right,
+              rgb(219, 255, 255),
+              rgb(200, 200, 200)
+            );
+            z-index: -1;
+            transition: 4.5s;
+          }
+        }
+      }
+    }
+  }
+
+  .product {
+    display: inline-block;
+  
+    width: 270px;
+    height: 350px;
+    background: rgb(248, 248, 248);
+    &:hover {
+      box-shadow: 0px 20px 20px 3px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.5s;
+      transform: scale(1.02);
+    }
+    .product-image {
+      width: 270px;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      // flex-direction: column;
+      background: rgb(248, 248, 248);
+      padding: 20px;
+      position: relative;
+  
+      .product-image-img1 {
+        width: 172px;
+        height: 152px;
+        object-fit: cover;
+  
+        &:hover {
+          filter: drop-shadow(35px 20px 10px black);
+          transform: scale(1.2) rotate(-15deg) translateX(17px);
+          transition: transform 0.8s;
+          z-index: 99;
+        }
+      }
+      .product-image-img2 {
+        width: 158px;
+        height: 166px;
+        object-fit: cover;
+  
+        &:hover {
+          filter: drop-shadow(35px 20px 10px black);
+          transform: scale(1.2) rotate(-15deg) translateX(17px);
+          transition: transform 0.8s;
+          z-index: 99;
+        }
+      }
+  
+      .discount {
+        width: 55px;
+        height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        border-radius: 5px;
+        font-weight: 600;
+        background: rgb(219, 68, 68);
+        color: white;
+        cursor: context-menu;
+  
+        &:hover {
+          background: rgb(255, 0, 0);
+          transition: 0.5s;
+          transform: scale(1.2);
+        }
+      }
+  
+      .product-btn {
+        position: absolute;
+        bottom: 0;
+        border-radius: 0px 0px 4px 4px;
+        background: linear-gradient(#e5e5e5, #323232, #191919, #000000);
+        visibility: hidden;
+        color: white;
+        width: 100%;
+        height: 41px;
+        font-weight: 600;
+  
+        &:active {
+          color: green;
+        }
+        &:focus {
+          transition: 1.9s ease-out;
+          transform: scale(1);
+        }
+      }
+      .product-btn::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: linear-gradient(#0eff00, #089000, #063b00);
+        z-index: -1;
+        transition: 4.5s;
+      }
+      .product-btn:hover::before {
+        width: 100%;
+      }
+  
+      .icons {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        visibility: hidden;
+  
+        .icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: white;
+          border-radius: 50%;
+          margin-top: 10px;
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+          transition: 0.2s;
+  
+          .heart {
+            width: 27px;
+            height: 27px;
+            &:hover {
+              transform: scale(1.2);
+            }
+            &:active {
+              opacity: 0.5;
+            }
+          }
+  
+          .eye {
+            width: 35px;
+            height: 35px;
+            &:hover {
+              transform: scale(1.2);
+            }
+            &:active {
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+      &:hover button {
+        visibility: visible;
+      }
+      &:hover .icons {
+        visibility: visible;
+      }
+    }
+    .product-sart {
+      height: 105px;
+      flex-wrap: wrap;
+      cursor: context-menu;
+      .rating {
+        span {
+          position: relative;
+          top: 3px;
+          left: 10px;
+          font-size: 17px;
+          font-weight: 500;
+        }
+      }
+      h4 {
+        color: rgb(0, 0, 0);
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+      }
+      .prices {
+        width: 85px;
+        height: 24px;
+        display: flex;
+        gap: 12px;
+        .red1 {
+          color: rgb(219, 68, 68);
+          font-family: Poppins;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+        }
+        .gray1 {
+          color: rgb(130, 130, 130);
+          font-family: Poppins;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          text-decoration: line-through;
+        }
+      }
+    }
+  }

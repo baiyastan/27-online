@@ -7,6 +7,9 @@ import Contact from "./pages/Contact";
 import Service from "./pages/Service";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
+import WishList from "./pages/wishList";
 
 export const myRouter = createBrowserRouter([
   {
@@ -32,6 +35,18 @@ export const myRouter = createBrowserRouter([
       {
         path: "*",
         element: <NotFound />,
+      },
+      {
+        path: "register",
+        element: <Register />,
+      },
+      {
+        path: "login",
+        element: <Login />,
+      },
+      {
+        path: "wishlist",
+        element: <WishList />,
       },
     ],
   },
