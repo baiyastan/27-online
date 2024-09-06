@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.scss";
+import like from "../../assets/svg/wishlist.svg";
+import cart from "../../assets/svg/cart.svg";
 
 function Header() {
   return (
@@ -27,10 +29,12 @@ function Header() {
           <input type="text" />
         </div>
         <div className="header-i">
-          <Link to="/">
-            <i className="bi bi-heart"></i>
+          <Link to="/wishlist">
+            <img src={like} alt="" />
           </Link>
-          <i className="bi bi-archive"></i>
+          <Link to="/cart">
+            <img src={cart} alt="" />
+          </Link>
           <i className="bi bi-person"></i>
         </div>
       </div>

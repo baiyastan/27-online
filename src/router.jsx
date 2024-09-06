@@ -10,6 +10,7 @@ import NotFound from "./pages/NotFound";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import WishList from "./pages/wishList";
+import Cart from "./pages/Cart";
 
 export const myRouter = createBrowserRouter([
   {
@@ -47,6 +48,10 @@ export const myRouter = createBrowserRouter([
       {
         path: "wishlist",
         element: <WishList />,
+      },
+      {
+        path: "cart",
+        element: <Cart />,
       },
     ],
   },

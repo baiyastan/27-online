@@ -1,18 +1,29 @@
 import React from "react";
 import Star from "../../assets/svg/star.jsx";
 import "./Product.scss";
+import like from "../../assets/svg/wishlist.svg";
+import { useDispatch } from "react-redux";
+import { addItem } from "../../redux/wishlist/wishSlice.js";
+import { addToCart } from "../../redux/cart/cartSlice.js";
 
 function Product({ data }) {
+  const dispatch = useDispatch();
+
   return (
     <div className="product">
       <div className="product-image">
         <img src={data.images[0]} alt="" />
         <div className="discount">-40%</div>
         <div className="icons">
-          <img src="" alt="" />
+          <img onClick={() => dispatch(addItem(data))} src={like} alt="" />
           <img src="" alt="" />
         </div>
-        <button className="product-btn">Add To Cart</button>
+        <button
+          onClick={() => dispatch(addToCart(data))}
+          className="product-btn"
+        >
+          Add To Cart
+        </button>
       </div>
       <div className="info">
         <h3>{data.title}</h3>
